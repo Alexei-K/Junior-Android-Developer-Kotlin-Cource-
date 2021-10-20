@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying.lesson5.solution
+package solutions.lesson5.solution_alex_k
 
 open class Human(open val name: String, open val age: Int) {
     open fun getInfo() {

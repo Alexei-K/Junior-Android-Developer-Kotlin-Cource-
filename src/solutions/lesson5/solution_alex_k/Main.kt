@@ -10,7 +10,7 @@ package solutions.lesson5.solution_alex_k
  * унаследовать от него класс Hospital который при создании выводит в консоль "Hospital was built"
  * создать несколько экземпляров каждого класса
  */
-fun main() {
+fun main1() {
     House()
     House()
     Hospital()
@@ -36,7 +36,6 @@ fun main2() {
     val people = arrayOf<Human>(alex, nick, ronaldo, messi)
     for (person in people) {
         person.getInfo()
-
 //        Не вызовется, потому что массив содержит переменные класса Human, а у Human нет такого метода
 //        person.playFootnall()
     }

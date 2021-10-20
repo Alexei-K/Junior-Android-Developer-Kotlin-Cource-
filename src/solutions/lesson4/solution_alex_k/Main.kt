@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying.lesson4.solution
+package solutions.lesson4.solution_alex_k
 
 /**
  * УРОК 4

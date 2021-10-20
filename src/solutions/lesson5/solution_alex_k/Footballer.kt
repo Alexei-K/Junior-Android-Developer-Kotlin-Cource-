@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying.lesson5.solution
+package solutions.lesson5.solution_alex_k
 
 class Footballer(
     override val name: String,

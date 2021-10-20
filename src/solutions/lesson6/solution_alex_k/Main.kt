@@ -1,5 +1,6 @@
-package com.kolis.test_catalog_app.studying.lesson6.solution
+package solutions.lesson6.solution_alex_k
 
+import com.kolis.test_catalog_app.studying.lesson6.solution.decodeWebError
 import solutions.lesson6.solution_alex_k.task1.ElectroSocket
 import solutions.lesson6.solution_alex_k.task1.IPhone
 import solutions.lesson6.solution_alex_k.task1.Tesla
@@ -79,6 +80,6 @@ fun main2() {
  * В конце программа выводит какой лес остался жив и список его живых деревьев.
  */
 
-fun main() {
+fun main3() {
 
 }

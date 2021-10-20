@@ -21,7 +21,7 @@ fun main2() {
 
 //Задача 2
 //Второе решение
-fun main3() {
+fun main() {
     val array = arrayOf(21, 88, 71, 62, 21, 4, 55, 7, 44, 0, -11, 1222)
     val sortedArray = arrayOfNulls<Int>(array.size)
     for (sortedIndex in 0..sortedArray.lastIndex) {

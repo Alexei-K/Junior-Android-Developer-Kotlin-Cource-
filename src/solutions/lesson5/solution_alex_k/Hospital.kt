@@ -1,6 +1,6 @@
-package com.kolis.test_catalog_app.studying.lesson5.solution
+package solutions.lesson5.solution_alex_k
 
-class Hospital:House() {
+class Hospital : House() {
     init {
         println("Hospital was built")
 
