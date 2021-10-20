@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying.lesson5
+package tasks.lesson5
 
 /**
  * Глава 5

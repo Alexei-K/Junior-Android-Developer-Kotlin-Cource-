@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying
+package tasks.lesson3
 
 /**
  * УРОК 3
