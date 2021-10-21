@@ -1,18 +1,15 @@
 package solutions.lesson6.solution_alex_k.task3
 
-class Oak(name: String) : Tree(name) {
+class Walnut(name: String) : Tree(name) {
 
-    override val maxAge: Int = (0..200).random()
-
+    override val maxAge: Int = (0..50).random()
 
     override val isAlive: Boolean
         get() = currentAge < maxAge
 
     override fun grow(years: Int) {
         if (!isAlive) return
-        if (currentAge < 100) {
-            currentHeight += years * 2
-        }
+        currentHeight += years * 0.5
         currentAge += years
     }
 }

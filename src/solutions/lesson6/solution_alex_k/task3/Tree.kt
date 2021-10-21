@@ -4,11 +4,11 @@ abstract class Tree(
      val name: String
 ) {
      var currentAge: Int = 0
-     var currentHeight: Int = 0
-    abstract val maxYears: Int
+     var currentHeight: Double = 0.0
+    abstract val maxAge: Int
 
 
-    abstract var isAlive: Boolean
+    abstract val isAlive: Boolean
 
     abstract fun grow(years: Int)
 }

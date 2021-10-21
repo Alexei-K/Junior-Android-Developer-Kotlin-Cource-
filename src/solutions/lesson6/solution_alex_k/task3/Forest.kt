@@ -1,6 +1,6 @@
 package solutions.lesson6.solution_alex_k.task3
 
-class Forest(private val trees: Array<Tree>) {
+class Forest(val name: String,  val trees: Array<Tree>) {
 
     fun someYearsPast(years: Int) {
         for (tree in trees) {
@@ -9,5 +9,17 @@ class Forest(private val trees: Array<Tree>) {
     }
 
     val isAlive: Boolean
-        get() = trees.filter { tree -> tree.isAlive }.isNotEmpty()
+        get() {
+            for (tree in trees) {
+                if (tree.isAlive) {
+                    return true
+                }
+            }
+            return false
+        }
+    // Simple solution:
+    // val isAlive: Boolean
+    // get() = trees.filter { tree -> tree.isAlive }.isNotEmpty()
+
+
 }
