@@ -28,9 +28,9 @@ fun main1() {
  * Создать метод decodeWebError()
  *  который принимает error:Int и выводит в консоль :
  *  если код меньше 100 или больше 600 - "Not valid code"
- *  если код начинается на "2" - "ОК"
+ *  если код начинается на "2" - "ОК" (например 202)
  *  если код 404 - " Web site not found"
- *  если любой другой код начинающийся на 4 - "Unknown error" + код ошибки
+ *  если любой другой код начинающийся на 4 - "Unknown error" + код ошибки  (например 402)
  *  для всех остальных вариантов - "The code (номер кода) is valid,
  *  but unknown. Check it here:https://siterost.net/post/http-status-codes"
  *
