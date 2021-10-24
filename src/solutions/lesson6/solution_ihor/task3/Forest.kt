@@ -6,7 +6,7 @@ class Forest(var name: String, var trees: Array<Tree>) {
         get() {
             var aliveForest: Boolean
             for (tree in trees) {
-                if (tree.isAlive()) {
+                if (tree.alive) {
                     aliveForest = true
                     isAlive = aliveForest
                 }
@@ -19,7 +19,7 @@ class Forest(var name: String, var trees: Array<Tree>) {
         for (items in trees) {
             if (isAlive) {
                 items.grow(years)
-                items.isAlive()
+                items.alive
             } else {
                 println("Forest is dead")
             }

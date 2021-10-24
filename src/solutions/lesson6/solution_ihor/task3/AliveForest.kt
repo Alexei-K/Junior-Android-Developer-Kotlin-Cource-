@@ -9,7 +9,7 @@ class AliveForest(var winningForest: Forest) {
                         "${item.currentYears} years and have " +
                         "${item.height} height"
             )
-            if (item.isAlive()) {
+            if (item.alive) {
                 println("But alive only ${item.javaClass.simpleName} with age ${item.currentYears}")
             }
         }

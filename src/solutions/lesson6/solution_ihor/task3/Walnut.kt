@@ -9,13 +9,10 @@ class Walnut : Tree() {
     override var height: Double = 0.0
 
 
-    override fun isAlive(): Boolean {
-        if (currentYears > maxYears) alive = false
-        return alive
-    }
+
 
     override fun grow(yearsPassed: Int) {
-        if (isAlive()) {
+        if (alive) {
             height += yearsPassed * 0.5
             currentYears += yearsPassed
         }

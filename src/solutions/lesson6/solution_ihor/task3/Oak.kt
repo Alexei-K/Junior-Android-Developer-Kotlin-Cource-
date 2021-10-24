@@ -9,13 +9,11 @@ class Oak : Tree() {
     override var height: Double = 0.0
 
 
-    override fun isAlive(): Boolean {
-        if (currentYears > maxYears) alive = false
-        return alive
-    }
+
+
 
     override fun grow(yearsPassed: Int) {
-        if (isAlive()) {
+        if (alive) {
             if (currentYears < 100) {
                 height += yearsPassed * 2
             }

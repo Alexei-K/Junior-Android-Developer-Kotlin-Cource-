@@ -15,7 +15,7 @@ abstract class Tree() {
 
 
     abstract fun grow(yearsPassed: Int)
-    abstract fun isAlive(): Boolean
+
 
 
 }
