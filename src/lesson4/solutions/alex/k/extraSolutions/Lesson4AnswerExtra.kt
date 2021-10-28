@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 /**
  * УРОК 4 РЕШЕНИЕ Дополнительных заданий для повторения

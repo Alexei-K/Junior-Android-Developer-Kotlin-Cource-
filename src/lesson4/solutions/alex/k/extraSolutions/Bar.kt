@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 class Bar(var bottles: Array<Bottle>, val barman: Barman) {
 

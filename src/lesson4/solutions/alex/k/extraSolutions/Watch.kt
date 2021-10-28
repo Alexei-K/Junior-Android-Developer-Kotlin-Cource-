@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 class Watch(val model: String) {
      var isWorking: Boolean = true

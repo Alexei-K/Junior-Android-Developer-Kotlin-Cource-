@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 class Pet(val type: String, val name: String, val height: Int, var isFriendly: Boolean) {
     fun greet() {

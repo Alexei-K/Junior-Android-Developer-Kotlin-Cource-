@@ -1,4 +1,4 @@
-package tasks.lesson6
+package lesson6.tasks
 
 
 /**

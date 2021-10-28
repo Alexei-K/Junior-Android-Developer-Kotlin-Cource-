@@ -1,6 +1,6 @@
-package solutions.lesson6.solution_alex_k
+package lesson6.solution.alex.k
 
-import com.kolis.test_catalog_app.studying.lesson6.solution.decodeWebError
+import lesson6.solution.alex.k.task2.decodeWebError
 import lesson6.solution.alex.k.task1.ElectroSocket
 import lesson6.solution.alex.k.task1.IPhone
 import lesson6.solution.alex.k.task1.Tesla

@@ -1,4 +1,4 @@
-package solutions.lesson7.solution_Ihor
+package lesson7.solution.ihor
 
 import lesson6.solution.ihor.task1.Tesla
 import lesson7.solution.ihor.task1.Footballer

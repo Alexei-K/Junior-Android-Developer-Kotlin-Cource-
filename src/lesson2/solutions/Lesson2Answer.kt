@@ -1,4 +1,4 @@
-package lesson2
+package lesson2.solutions
 
 //Задача 1
 //Вывести все элементы массива в консоль в обратном порядке

@@ -1,4 +1,4 @@
-package tasks.lesson5
+package lesson5.tasks
 
 /**
  * Глава 5

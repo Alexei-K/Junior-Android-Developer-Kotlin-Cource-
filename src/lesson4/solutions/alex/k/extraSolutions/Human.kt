@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 class Human(val name: String, var pet: Pet) {
     fun getInfoAboutPet(): String {

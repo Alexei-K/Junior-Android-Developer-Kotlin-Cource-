@@ -1,4 +1,4 @@
-package com.kolis.test_catalog_app.studying.lesson6.solution
+package lesson6.solution.alex.k.task2
 
 fun decodeWebError(code: Int) {
     when {

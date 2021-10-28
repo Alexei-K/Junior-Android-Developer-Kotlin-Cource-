@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.extraTasks
+package lesson4.solutions.alex.k.extraSolutions
 
 class Bottle(var name: String, var isAlcohol: Boolean, val volume: Float) {
     var currentVolume: Float = volume

@@ -1,4 +1,4 @@
-package lesson4.solutions.alex.k.tasks
+package lesson4.solutions.alex.k.solutions
 
 class SecretLetter {
     var text = ""

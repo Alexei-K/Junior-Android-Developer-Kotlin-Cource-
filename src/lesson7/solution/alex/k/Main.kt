@@ -1,4 +1,4 @@
-package solutions.lesson7.solution_alex_k
+package lesson7.solution.alex.k
 
 import lesson5.solutions.alex.k.Footballer
 import lesson6.solution.alex.k.task1.Tesla

@@ -1,4 +1,4 @@
-package solutions.lesson6.solution_ihor
+package lesson6.solution.ihor
 
 import lesson6.solution.ihor.task1.ElectroSocket
 import lesson6.solution.ihor.task1.IPhone

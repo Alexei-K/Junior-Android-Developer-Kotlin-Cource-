@@ -1,4 +1,4 @@
-package tasks.lesson7
+package lesson7.tasks
 
 /**
  * Урок 7
