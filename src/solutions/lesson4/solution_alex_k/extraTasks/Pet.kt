@@ -1,4 +1,4 @@
-package solutions.lesson4.solution_alex_k
+package solutions.lesson4.solution_alex_k.extraTasks
 
 class Pet(val type: String, val name: String, val height: Int, var isFriendly: Boolean) {
     fun greet() {
@@ -11,12 +11,12 @@ class Pet(val type: String, val name: String, val height: Int, var isFriendly: B
         isFriendly = true
     }
 
-    fun getInfo() {
+    fun getInfo():String {
         val friendlyText = if (isFriendly) {
             "I am friendly"
         } else {
             "I am not friendly"
         }
-        println("I am $type, $height cm height and $friendlyText")
+        return "I am $type, $height cm height and $friendlyText"
     }
 }

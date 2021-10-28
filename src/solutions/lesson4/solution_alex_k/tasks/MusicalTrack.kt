@@ -1,4 +1,4 @@
-package solutions.lesson4.solution_alex_k
+package solutions.lesson4.solution_alex_k.tasks
 
 class MusicalTrack(
     val fileExtension: String,
