@@ -1,11 +1,14 @@
+import kotlin.math.pow
+
 /* Задача 1
 * Создать метод seriousGuy, который принимает имя человека(текст) и выводит в консоль "Mr. " и имя человека
 */
 //fun main () {
-//    seriousGuy()
-//}
-//fun seriousGuy () {
 //    val name = "Вася"
+//    seriousGuy(name)
+//}
+//fun seriousGuy (name: String) {
+//
 //    println("Mr. $name")
 //}
 
@@ -17,7 +20,7 @@
 //    println(getJoke())
 //}
 //fun getJoke (): String {
-//    return ("Колобок повесился")
+//    return "Колобок повесился"
 //}
 
 /**
@@ -30,7 +33,7 @@
 //    println(sum(firstInt, secondInt))
 //}
 //fun sum (firstInt: Int, secondInt: Int): Int {
-//    return (firstInt + secondInt)
+//    return firstInt + secondInt
 //}
 
 /**
@@ -39,12 +42,12 @@
  */
 //fun main() {
 //    val squareInt = 3
-//    println(sum(squareInt))
+//    println(square(squareInt))
 //}
 //
-//fun sum(squareInt: Int): Int {
-//    val result = squareInt * squareInt
-//    return (result)
+//fun square(squareInt: Int): Int {
+//    return squareInt.toDouble().pow(2).toInt()
+////    return squareInt * squareInt
 //}
 
 
@@ -53,16 +56,15 @@
  * Создать метод powerBy, который принимает 2 Int числа и возвращает результат возведения первого числа в степень второго числа.
  * Пример: для числе 2 и 4 вернется число 16
  */
-//import kotlin.math.*
+
 //fun main () {
 //    val firstInt = 2
 //    val secondInt = 4
-//    val answer: Double = powerBy(firstInt.toDouble(), secondInt)
-//    println(answer.toInt())
+//    val answer = powerBy(firstInt, secondInt)
+//    println(answer)
 //}
-//fun powerBy (firstInt: Double, secondInt: Int): Double {
-//    val result = firstInt.pow(secondInt)
-//    return (result)
+//fun powerBy(firstInt: Int, secondInt: Int): Int {
+//    return firstInt.toDouble().pow(secondInt).toInt()
 //}
 
 /**
@@ -93,8 +95,9 @@
  */
 
 //fun drive(kilometer: Int, isDrunk: Boolean) {
-//    if (isDrunk)
-//    return
+//    if (isDrunk) {
+//        return
+//    }
 //    for (km in 1..kilometer) {
 //        println("Проехали $km-й киллометр")
 //    }
@@ -106,15 +109,17 @@
  * Создать метод который принимает фамилию человека и Boolean переменную IsMale(является ли мужчиной)
  * И возвращает "Mr." или "Mrs." + фамилию в зависимости от пола
  */
-//fun main () {
-//    humMail ("Иванов",true)
-//    humMail ("Петрова", false)
+//fun main() {
+//    println(humMail("Иванов", true))
+//    println(humMail("Петрова", false))
 //}
-//fun humMail (surname: String, IsMale: Boolean) {
-//    return if (IsMale)
-//        println("Mr. $surname")
-//    else
-//        println("Mrs. $surname")
+//
+//fun humMail(surname: String, IsMale: Boolean): String {
+//    return if (IsMale) {
+//        "Mr. $surname"
+//    } else {
+//        "Mrs. $surname"
+//    }
 //}
 
 /**
@@ -123,16 +128,17 @@
  * Примеры: принимает 9000 и '.' возвращает 90.00$
  * принимает 500 и ',' возвращает 5,00$
  */
-//fun main () {
-//    formatToDollars (9000, '.')
-//    formatToDollars (500, ',')
+//fun main() {
+//    println(formatToDollars(1234, '.'))
+//    println(formatToDollars(500, ','))
 //}
-//fun formatToDollars (numberOfCents: Int, charseparator: Char) {
-//    val y = numberOfCents / 100
-//    val p = numberOfCents % 10
-//    val o = numberOfCents / 10 % 10
-//    val z = y.toString()+charseparator+o.toString()+p.toString()
-//    println(z)
+//
+//fun formatToDollars(numberOfCents: Int, charSeparator: Char): String {
+//    val dollars = numberOfCents / 100
+//    val number1 = numberOfCents % 10
+//    val number2 = numberOfCents / 10 % 10
+//    val result = dollars.toString() + charSeparator + number2.toString() + number1.toString()
+//    return "$result$"
 //}
 
 /**
@@ -142,18 +148,19 @@
  * понадобилось программе на выполнение этого метода.
  */
 
-fun main () {
-    itsCool(3)
-    justforfun()
-}
-fun itsCool (numItsCool: Int) {
-    for (i in 1..numItsCool)
-        println("Ты молодец")
-}
-fun justforfun(){
-    val start = System.currentTimeMillis()
-    Thread.sleep(3000)
-    val end = System.currentTimeMillis()
-    println("На выполнение метода ушло ${(end - start)/1000} секунд.")
-}
+//fun main () {
+//    itsCool(1000)
+//    justforfun()
+//}
+//fun itsCool (numItsCool: Int) {
+//    for (i in 1..numItsCool)
+//        println("Ты молодец")
+//}
+//fun justforfun(){
+//    val start = System.currentTimeMillis()
+////    Thread.sleep(3000)
+//    itsCool(1000)
+//    val end = System.currentTimeMillis()
+//    println("На выполнение метода ушло ${(end - start).toFloat()/1000} секунд.")
+//}
 
