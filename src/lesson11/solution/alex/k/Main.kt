@@ -55,26 +55,24 @@ fun task2() {
 
 /**
  * Задача 3.
- * TextDownloader - Симулятор загрузки текста из интернета.
- * метод downloadFromInternet принимает ссылку с которой надо скачать текст и лямбду,
- * которая определяет что с этим текстом нужно сделать когда он скачается.
- * Задача: определить тип лямбды и запустить метод с разными лямбдами.
+ * Разобраться и протестировать класс RedButton.
+ * Создать экземпляры кнопки, изменить их листенеры и покликать на кнопку.
  */
 
 fun task3() {
     println("\n----Task 3=----")
-    val downloader = TextDownloader()
-    downloader.downloadFromInternet("https://coolsmiles.com") { dowloadResult ->
-        println("text downloaded.")
-        println(dowloadResult)
+    val button1 = RedButton()
+    button1.setClickListener {
+        println("кнопка 1 нажата")
     }
-    var downloadResult: String? = null
-    downloader.downloadFromInternet("https://coolsmiles.com") {
-        println("text downloaded.")
-        println("saved download result in downloadResult.")
-        downloadResult = it
+    println("сейчас на кнопку 1 нажмут")
+    button1.click()
+    println("меняем листенер")
+    button1.setClickListener {
+        println("ALERT ALERT!!!")
     }
-    println(downloadResult)
+    println("сейчас на кнопку 1 снова нажмут")
+    button1.click()
 }
 
 /**
