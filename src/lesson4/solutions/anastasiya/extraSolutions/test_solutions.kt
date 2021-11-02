@@ -26,7 +26,7 @@ fun task3() {
 }
 
 fun task4() {
-    val firstPair = Love("Stas","Lera", 30,26)
+    val firstPair = Love("Stas","Lera", 10,90)
     firstPair.compatibilityName()
     firstPair.compatibilityAge()
 }

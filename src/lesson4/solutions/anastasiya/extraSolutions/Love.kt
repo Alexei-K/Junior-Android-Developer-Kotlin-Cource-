@@ -10,7 +10,10 @@ class Love(var manName: String, var womenName: String, var manAge: Int, var wome
     }
 
     fun compatibilityAge() {
-        val difference = manAge - womenAge
+        var difference = manAge - womenAge
+        if (difference < 0) {
+            difference *= -1
+        }
         if (difference <= 5) {
             println("perfect couple")
         } else if (difference in 6..9) {
