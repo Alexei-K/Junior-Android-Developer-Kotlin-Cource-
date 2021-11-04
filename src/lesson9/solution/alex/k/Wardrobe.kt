@@ -1,7 +1,7 @@
 package lesson9.solution.alex.k
 
 class Wardrobe {
-    val dressList = mutableListOf<Dress>()
+    var dressList = mutableListOf<Dress>()
     fun putDress(dress: Dress) {
         dressList.add(dress)
     }
