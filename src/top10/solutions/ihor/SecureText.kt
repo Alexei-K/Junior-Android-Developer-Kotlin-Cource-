@@ -5,10 +5,10 @@ import java.lang.Exception
 class SecureText {
     private val text = "Nudes"
     private val pass = 18
-    fun getTextByPassword(password: Int) {
+    fun getTextByPassword(password: Int):String {
         if (password == pass) {
             println("Right password")
-            println(text)
+            return text
         } else {
             throw Exception("Wrong pass")
         }

@@ -5,6 +5,7 @@ import java.lang.Exception
 class Exchanger {
     fun exchangeToDollars(sum: Int, currency: Currency): Double {
         val commission = when (currency) {
+
             Currency.EURO -> {
                 0.01
             }
