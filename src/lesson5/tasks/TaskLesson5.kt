@@ -1,5 +1,10 @@
-package lesson5.tasks
-
+import javax.lang.model.element.Name
+import kotlin.reflect.full.memberProperties
+fun main (){
+    task11()
+    task12()
+    task13()
+}
 /**
  * Глава 5
  */
@@ -10,8 +15,26 @@ package lesson5.tasks
  * унаследовать от него класс Hospital который при создании выводит в консоль "Hospital was built"
  * создать несколько экземпляров каждого класса
  */
-fun main() {
 
+fun task11() {
+
+    val build = House ("House")
+    val building = Hospital("House1", "Hospital1")
+    build.printHouseStatus()
+    building.printHouseStatus()
+    building.printHospitalStatus()
+}
+
+open class House (private val house: String){
+    fun printHouseStatus(){
+        println("$house was built")
+    }
+}
+class Hospital(houseName: String, private val hospital: String): House("House1"){
+
+    fun printHospitalStatus(){
+        println("$hospital was built")
+    }
 }
 
 
@@ -25,8 +48,41 @@ fun main() {
  * Так же вызовите метод toString() и результат выведите в консоль
  * если какой то из методов не вызывается, то закомментировать его и объяснить в комментарии почему
  */
-fun main2() {
+fun task12() {
+    val vasja = Human("Вася", 18)
+    val vasja2 = Human("Вася2", 19)
+    val kolja = Footballer("Коля", 20, 15.0, 10.0, "Ливерпуль")
+    val kolja2 = Footballer("Коля2", 21, 16.0, 11.0, "Манчестер")
+    val arrayofMens = arrayOf(vasja, vasja2, kolja, kolja2)
+    vasja.getInfo()
+    kolja.getInfo()
+    kolja.playFootball()
+    arrayofMens[0].getInfo().toString()
+    arrayofMens[1].getInfo().toString()
+    arrayofMens[2].getInfo().toString()
+    arrayofMens[3].getInfo().toString()
+//    arrayofMens[1].playFootbal()
+}
 
+open class Human(open val name: String, open val age: Int) {
+    open fun getInfo() {
+        val c = Human::class.java.simpleName
+        val y = name
+        println("$c: $y")
+    }
+}
+class Footballer(override val name: String, override val age: Int, val wins: Double, val looses: Double, val teamName: String):
+    Human(name, age){
+    override fun getInfo(){
+        val persentWins = wins/(wins+looses)*100
+        val c = Human::class.java.simpleName
+        val y = name
+        val a = teamName
+        println("$c: $y; $persentWins; $a")
+    }
+    fun playFootball(){
+        println("Спартак чемпион!")
+    }
 }
 
 /**
@@ -37,7 +93,55 @@ fun main2() {
  *  Так же попробуйте вызвать "$название_переменной"
  */
 
-fun main3() {
+fun task13() {
+    val vasja = Human("Вася", 18)
+    val vasja2 = Human("Вася2", 19)
+    val kolja = Footballer("Коля", 20, 15.0, 10.0, "Ливерпуль")
+    val kolja2 = Footballer("Коля2", 21, 16.0, 11.0, "Манчестер")
+    val arrayofMens = arrayOf(vasja, vasja2, kolja, kolja2)
+    vasja.getInfo()
+    kolja.getInfo()
+    kolja.playFootball()
+    arrayofMens[0].getInfo().toString()
+    arrayofMens[1].getInfo().toString()
+    arrayofMens[2].getInfo().toString()
+    arrayofMens[3].getInfo().toString()
+    arrayofMens[0].toString()
+    arrayofMens[1].toString()
+    arrayofMens[2].toString()
+    arrayofMens[3].toString()
+//    arrayofMens[1].playFootbal() // Предполагаю, что из массива невозможно вызвать методы без override
+Footballer::class.memberProperties.map {
+    val variableName = it.name
+        println("$$variableName")
+    }
 
+}
+
+open class Human(open val name: String, open val age: Int) {
+    open fun getInfo() {
+        val className = Human::class.java.simpleName
+        val humanName = name
+        println("$className: $humanName")
+    }
+    override fun toString(): String {
+        return println(name).toString()
+    }
+}
+class Footballer(override val name: String, override val age: Int, val wins: Double, val looses: Double, val teamName: String):
+    Human(name, age){
+    override fun getInfo(){
+        val persentWins = wins/(wins+looses)*100
+        val className = Human::class.java.simpleName
+        val humanName = name
+        val comandName = teamName
+        println("$className: $humanName; $persentWins; $comandName")
+    }
+    fun playFootball(){
+        println("Спартак чемпион!")
+    }
+    override fun toString(): String {
+        return println(name).toString()
+    }
 }
 
