@@ -8,4 +8,7 @@ class Logger (var _text: String) {
     fun printInternalText() {
         println(_text)
     }
+    fun printInConsole(text:String){
+        println(text)
+    }
 }
