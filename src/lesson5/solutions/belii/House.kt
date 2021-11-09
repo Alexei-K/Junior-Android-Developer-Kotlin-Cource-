@@ -4,4 +4,5 @@ open class House () {
     init {
         println("House was built")
     }
+
 }

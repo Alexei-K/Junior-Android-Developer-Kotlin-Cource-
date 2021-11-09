@@ -5,4 +5,5 @@ class Hospital(): House(){
     init {
         println("Hospital was built")
     }
+
 }

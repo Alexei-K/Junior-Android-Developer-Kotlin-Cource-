@@ -15,4 +15,5 @@ class Footballer(
     fun playFootball() {
         println("Спартак чемпион!")
     }
+
 }
