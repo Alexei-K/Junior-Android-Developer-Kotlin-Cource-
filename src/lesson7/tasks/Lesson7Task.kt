@@ -35,7 +35,7 @@ fun main2() {
  * в котором реализованы все 3 метода ModernSocket
  * При этом следующий код должен запускаться:
  */
-fun main3() {
+fun main() {
 //    val universalSocket = UniversalSocket(15f)
 //    val tesla1 = Tesla()
 //    val tesla2 = Tesla()
