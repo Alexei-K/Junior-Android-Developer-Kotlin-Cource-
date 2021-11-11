@@ -6,6 +6,12 @@ import lesson7.solution.anastasiya.task1.FootballerModel
 import lesson7.solution.anastasiya.task2.ModernSocket
 import lesson7.solution.anastasiya.task3.UniversalSocket
 
+fun main() {
+    task1()
+    task2()
+    task3()
+}
+
 fun task1() {
     val footballer1 = Footballer("Bobo", 25, 84, 16, "Mexikango")
     val footballerModel2 = FootballerModel("Jojo", 36, 58, 42, "Koyoters")
@@ -26,7 +32,7 @@ fun task2() {
     socket.chargeDevice(device4)
 }
 
-fun main() {
+fun task3() {
     val universalSocket = UniversalSocket(15f)
     val tesla1 = Tesla()
     val tesla2 = Tesla()
