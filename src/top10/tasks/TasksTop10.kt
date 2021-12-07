@@ -47,7 +47,7 @@ fun theme3() {
 
 /**
  * Тема 6
- * Создать класс ExchangerUtil c методом exchangeToDollars как в классе Exchanger. Однако тут метод должен вызывать
+ * Создать класс ExchangerUtil c методом exchangeToDollars как в классе Exchanger. Однако тут метод должен вызываться
  * без создания экземпляра класса:
  * ExchangerUtil.exchangeToDollars(...)
  */
