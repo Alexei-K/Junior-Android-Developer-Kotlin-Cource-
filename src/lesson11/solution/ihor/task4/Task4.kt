@@ -11,5 +11,4 @@ fun task4() {
     }
 
     println(lambda4("haha", 3))
-
 }

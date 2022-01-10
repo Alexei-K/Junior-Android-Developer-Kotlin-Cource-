@@ -8,8 +8,6 @@ class Delayer {
         lambda1()
         Thread.sleep(time)
         lambda2()
-
-
     }
 }
 
