@@ -15,12 +15,12 @@ fun isRevertable(word: CharArray): Boolean {
     } else {
     var i1 = 0
     var i2 = word.size - 1
-    while (i2 > i1) {
-        if (word[i1].lowercaseChar() != word[i2].lowercaseChar()) {
-            return false
-        }
-        ++i1
-        --i2
-    }
+//    while (i2 > i1) {
+//        if (word[i1].lowercaseChar() != word[i2].lowercaseChar()) {
+//            return false
+//        }
+//        ++i1
+//        --i2
+//    }
     return true
 }}
