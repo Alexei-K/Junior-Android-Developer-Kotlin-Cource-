@@ -16,7 +16,7 @@ fun isRevertable(word: CharArray): Boolean {
     var i1 = 0
     var i2 = word.size - 1
     while (i2 > i1) {
-        if (word[i1].lowercaseChar() != word[i2].lowercaseChar()) {
+        if (word[i1].isLowerCase() != word[i2].isLowerCase()) {
             return false
         }
         ++i1
